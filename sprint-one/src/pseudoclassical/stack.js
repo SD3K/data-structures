@@ -7,13 +7,13 @@ Stack.prototype.push = function(value) {
   this.storage[this.index++] = value;
   return this.index;
 };
-Stack.prototype.pop = function(value) {
+Stack.prototype.pop = function() {
   if (this.index > 0) {
     var popped = this.storage[--this.index];
     delete this.storage[this.index];
   }
   return popped;
 };
-Stack.prototype.size = function(value) {
+Stack.prototype.size = function() {
   return this.index;
 };

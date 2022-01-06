@@ -1,8 +1,8 @@
 var Queue = function() {
   var someInstance = {};
-  var storage = {};
   var tail = 0;
   var head = 0;
+  var storage = {};
 
   someInstance.enqueue = function(value) {
     storage[tail++] = value;
