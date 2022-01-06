@@ -10,8 +10,8 @@ var Queue = function() {
 
 var queueMethods = {
   enqueue: function(value) {
-    this.storage[this.tail] = value;
-    this.tail++;
+    this.storage[this.tail++] = value;
+    return this.tail;
   },
   dequeue: function() {
     if (this.tail > this.head) {
