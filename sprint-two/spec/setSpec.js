@@ -31,7 +31,6 @@ describe('set', function() {
     expect(set.contains('Danny Glover')).to.equal(true);
     expect(set.contains('Susan Sarandon')).to.equal(true);
     expect(set.contains('Mel Gibson')).to.equal(true);
-
     set.remove('Mel Gibson');
     set.remove('Susan Sarandon');
     set.remove('Danny Glover');
